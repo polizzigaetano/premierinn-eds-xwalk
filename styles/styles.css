@@ -41,6 +41,13 @@
   --nav-height: 64px;
   --breadcrumbs-height: 34px;
   --header-height: var(--nav-height);
+
+  /* extended palette */
+  --main-accent-color: var(--link-color);
+  --text-light: #fff;
+  --dark-color-opacity: rgb(80 80 80 / 70%);
+  --font-size-1000: 40px;
+  --section-gutter-space: 24px;
 }
 
 /* fallback fonts */

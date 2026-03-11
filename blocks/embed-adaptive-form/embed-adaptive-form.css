@@ -1,0 +1,3 @@
+main .embed-adaptive-form[aria-busy="true"] {
+  min-height: 200px;
+}

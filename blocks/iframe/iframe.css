@@ -1,0 +1,25 @@
+main .iframe-container {
+  padding: 0;
+  min-height: 500px;
+}
+
+main .iframe-container > div {
+  max-width: none;
+}
+
+main .iframe-wrapper {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  min-height: 500px;
+  height: calc(100vh - 300px);
+}
+
+main .iframe.block {
+  position: absolute;
+  margin: 0 var(--section-gutter-space);
+  border: 0;
+  inset: 0;
+  overflow: hidden;
+}

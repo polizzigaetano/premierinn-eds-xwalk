@@ -1,0 +1,38 @@
+main .separator-wrapper {
+  padding: 10px 0;
+  width: 100%;
+  min-height: 20px;
+}
+
+main .separator .separator-line {
+  display: block;
+  height: 1px;
+  width: 100%;
+  border: none;
+  margin: 0;
+  background-color: #c1c1c1;
+}
+
+main .separator .separator-line.light {
+  background-color: var(--light-color);
+}
+
+main .separator .separator-line.dark {
+  background-color: var(--dark-color);
+}
+
+main .separator .separator-line.hidden {
+  background-color: transparent;
+}
+
+main .separator .separator-block.small {
+  padding-block: 2rem;
+}
+
+main .separator .separator-block.medium {
+  padding-block: 4rem;
+}
+
+main .separator .separator-block.large {
+  padding-block: 6rem;
+}

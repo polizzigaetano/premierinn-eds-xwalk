@@ -14,6 +14,19 @@ import {
 } from './aem.js';
 
 /**
+ * Detects if the current environment is an AEM author instance.
+ * @returns {boolean}
+ */
+export function isAuthorEnvironment() {
+  try {
+    return typeof window !== 'undefined'
+      && /(^|\.)author[-.]/.test(window.location.hostname);
+  } catch (_) {
+    return false;
+  }
+}
+
+/**
  * Moves all the attributes from a given elmenet to another given element.
  * @param {Element} from the element to copy attributes from
  * @param {Element} to the element to copy attributes to

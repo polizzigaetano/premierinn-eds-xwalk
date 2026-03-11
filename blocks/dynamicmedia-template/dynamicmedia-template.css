@@ -1,0 +1,8 @@
+main .dynamicmedia-template {
+  text-align: center;
+}
+
+main .dynamicmedia-template img {
+  max-width: 100%;
+  height: auto;
+}

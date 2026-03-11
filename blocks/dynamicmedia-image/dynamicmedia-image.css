@@ -1,0 +1,13 @@
+main .dynamicmedia-image {
+  display: grid;
+  place-items: center end;
+}
+
+main .dynamicmedia-image > div {
+  width: 100%;
+}
+
+main .dynamicmedia-image img {
+  max-width: 100%;
+  height: auto;
+}

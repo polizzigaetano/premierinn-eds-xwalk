@@ -1,0 +1,176 @@
+main .content-fragment-container {
+  padding: 0;
+}
+
+main .content-fragment-container > div {
+  max-width: none;
+}
+
+main .content-fragment .cf-banner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 300px;
+  background-size: cover;
+  background-position: center;
+  color: var(--text-light);
+  overflow: hidden;
+}
+
+main .content-fragment .cf-banner-content {
+  position: relative;
+  z-index: 2;
+  padding: 2rem;
+  max-width: 600px;
+}
+
+main .content-fragment .cf-banner-subtitle {
+  font-size: var(--body-font-size-xs);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-block-end: 0.5rem;
+  opacity: 0.9;
+}
+
+main .content-fragment .cf-banner-title {
+  font-size: var(--heading-font-size-l);
+  font-weight: 700;
+  margin: 0 0 1rem;
+  line-height: 1.2;
+}
+
+main .content-fragment .cf-banner-description {
+  font-size: var(--body-font-size-s);
+  line-height: 1.6;
+  margin-block-end: 1.5rem;
+  opacity: 0.9;
+}
+
+main .content-fragment .cf-banner-cta {
+  display: inline-block;
+  padding: 12px 28px;
+  background-color: var(--text-light);
+  color: var(--text-color);
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 600;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+main .content-fragment .cf-banner-cta:hover {
+  background-color: var(--main-accent-color);
+  color: var(--text-light);
+}
+
+main .content-fragment .cf-banner-cta:focus-visible {
+  outline: 2px solid var(--text-light);
+  outline-offset: 2px;
+}
+
+/* Layout variants */
+main .content-fragment .cf-banner.image-left,
+main .content-fragment .cf-banner.image-right {
+  display: flex;
+  background: var(--background-color);
+  color: var(--text-color);
+  min-height: 350px;
+}
+
+main .content-fragment .cf-banner.image-left .cf-banner-image,
+main .content-fragment .cf-banner.image-right .cf-banner-image {
+  width: 50%;
+  background-size: cover;
+  background-position: center;
+  min-height: 350px;
+}
+
+main .content-fragment .cf-banner.image-left .cf-banner-content,
+main .content-fragment .cf-banner.image-right .cf-banner-content {
+  width: 50%;
+  padding: 2rem 3rem;
+}
+
+main .content-fragment .cf-banner.image-left {
+  flex-direction: row;
+}
+
+main .content-fragment .cf-banner.image-right {
+  flex-direction: row-reverse;
+}
+
+main .content-fragment .cf-banner.image-top,
+main .content-fragment .cf-banner.image-bottom {
+  flex-direction: column;
+  background: var(--background-color);
+  color: var(--text-color);
+}
+
+main .content-fragment .cf-banner.image-top .cf-banner-image,
+main .content-fragment .cf-banner.image-bottom .cf-banner-image {
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+}
+
+main .content-fragment .cf-banner.image-top .cf-banner-content,
+main .content-fragment .cf-banner.image-bottom .cf-banner-content {
+  width: 100%;
+  max-width: 100%;
+  padding: 2rem 3rem;
+}
+
+main .content-fragment .cf-banner.image-bottom {
+  flex-direction: column-reverse;
+}
+
+/* Alignment */
+main .content-fragment .cf-banner.text-center .cf-banner-content {
+  text-align: center;
+  margin-inline: auto;
+}
+
+main .content-fragment .cf-banner.text-right .cf-banner-content {
+  margin-inline-start: auto;
+  text-align: end;
+}
+
+/* Responsive */
+@media (width >= 900px) {
+  main .content-fragment .cf-banner {
+    min-height: 400px;
+  }
+
+  main .content-fragment .cf-banner-content {
+    padding: 3rem;
+  }
+
+  main .content-fragment .cf-banner-title {
+    font-size: var(--heading-font-size-xl);
+  }
+}
+
+@media (width < 900px) {
+  main .content-fragment .cf-banner.image-left,
+  main .content-fragment .cf-banner.image-right {
+    flex-direction: column;
+  }
+
+  main .content-fragment .cf-banner.image-left .cf-banner-image,
+  main .content-fragment .cf-banner.image-right .cf-banner-image,
+  main .content-fragment .cf-banner.image-left .cf-banner-content,
+  main .content-fragment .cf-banner.image-right .cf-banner-content {
+    width: 100%;
+  }
+
+  main .content-fragment .cf-banner.image-left .cf-banner-image,
+  main .content-fragment .cf-banner.image-right .cf-banner-image {
+    min-height: 250px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  main .content-fragment .cf-banner-cta {
+    transition: none;
+  }
+}
