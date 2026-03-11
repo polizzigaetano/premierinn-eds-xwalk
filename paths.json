@@ -1,7 +1,10 @@
 {
   "mappings": [
-    "/content/aem-block-collection/:/",
-    "/content/aem-block-collection/metadata:/metadata.json",
-    "/content/aem-block-collection/configuration:/.helix/config.json"
+    "/content/premierinn-eds-xwalk/:/",
+    "/content/premierinn-eds-xwalk/metadata:/metadata.json",
+    "/content/premierinn-eds-xwalk/configuration:/.helix/config.json"
+  ],
+  "includes" : [
+    '/content/premierinn-eds-xwalk/'
   ]
 }
