@@ -11,70 +11,117 @@
  */
 
 :root {
-  /* colors */
-  --background-color: white;
+  /* brand colors */
+  --color-purple: #511e62;
+  --color-purple-dark: #3d1549;
+  --color-purple-light: #6c3072;
+  --color-purple-muted: #9f78a3;
+  --color-purple-pale: #c4acc7;
+  --color-teal: #00798e;
+  --color-teal-dark: #006475;
+  --color-teal-light: #bfdde3;
+  --color-teal-pale: #e5f2f6;
+  --color-red: #d90941;
+  --color-red-dark: #cd0325;
+  --color-green: #bdd600;
+  --color-sage: #b6c4c1;
+  --color-sage-light: #dae1e0;
+  --color-sage-pale: #e8ebea;
+  --color-warm-white: #f1f0ed;
+  --color-warm-cream: #feefd9;
+  --color-teal-vivid: #008fa8;
+  --color-teal-blue: #007fab;
+  --color-purple-faint: #e9e0ea;
+  --color-purple-wash: #e2d6e3;
+  --color-purple-glow: #b597b8;
+  --color-teal-mid: #80bfbd;
+  --color-pink: #fbe6ec;
+  --color-mint: #e8f3ed;
+  --color-orange: #da3c21;
+  --color-orange-dark: #d73d00;
+  --color-gold: #fcb92a;
+  --color-green-dark: #1c8754;
+  --color-off-white: #f0f2f2;
+
+  /* semantic colors */
+  --background-color: #fff;
   --light-color: #f8f8f8;
-  --dark-color: #505050;
-  --text-color: #131313;
-  --link-color: #3b63fb;
-  --link-hover-color: #1d3ecf;
-  --overlay-background-color:lightgrey;
+  --dark-color: #333;
+  --text-color: #333;
+  --text-color-dark: #363636;
+  --text-color-muted: #58595b;
+  --text-color-disabled: #949494;
+  --link-color: #00798e;
+  --link-hover-color: #006475;
+  --overlay-background-color: #dae1e0;
+  --border-color: #ddd;
+  --border-color-light: #e0e0e0;
+  --error-color: #d90941;
 
   /* fonts */
-  --body-font-family: roboto, roboto-fallback, sans-serif;
-  --heading-font-family: roboto-condensed, roboto-condensed-fallback, sans-serif;
+  --body-font-family: 'proxima-nova', proxima-nova-fallback, helvetica, arial, sans-serif;
+  --heading-font-family: 'proxima-nova', proxima-nova-fallback, helvetica, arial, sans-serif;
 
   /* body sizes */
-  --body-font-size-m: 22px;
-  --body-font-size-s: 19px;
-  --body-font-size-xs: 17px;
+  --body-font-size-l: 19px;
+  --body-font-size-m: 16px;
+  --body-font-size-s: 14px;
+  --body-font-size-xs: 12px;
 
   /* heading sizes */
-  --heading-font-size-xxl: 55px;
-  --heading-font-size-xl: 44px;
-  --heading-font-size-l: 34px;
-  --heading-font-size-m: 27px;
-  --heading-font-size-s: 24px;
-  --heading-font-size-xs: 22px;
+  --heading-font-size-xxl: 49px;
+  --heading-font-size-xl: 29px;
+  --heading-font-size-l: 26px;
+  --heading-font-size-m: 23px;
+  --heading-font-size-s: 20px;
+  --heading-font-size-xs: 18px;
 
   /* nav heights */
-  --nav-height: 64px;
+  --nav-height: 90px;
   --breadcrumbs-height: 34px;
   --header-height: var(--nav-height);
 
-  /* extended palette */
-  --main-accent-color: var(--link-color);
-  --text-light: #fff;
-  --dark-color-opacity: rgb(80 80 80 / 70%);
-  --font-size-1000: 40px;
+  /* layout */
+  --section-max-width: 980px;
   --section-gutter-space: 24px;
+  --content-max-width: 940px;
+
+  /* radii */
+  --border-radius-s: 3px;
+  --border-radius-m: 4px;
+  --border-radius-l: 8px;
+  --border-radius-pill: 20px;
+
+  /* shadows */
+  --shadow-card: 0 2px 6px 0 rgb(51 51 51 / 30%);
+  --shadow-elevated: 0 4px 8px 0 #ccc;
+  --shadow-button-hover: 0 4px 8px #979797;
+
+  /* extended palette */
+  --main-accent-color: var(--color-teal);
+  --text-light: #fff;
+  --dark-color-opacity: rgb(51 51 51 / 70%);
+  --font-size-1000: 40px;
 }
 
-/* fallback fonts */
+/* fallback font metrics for Proxima Nova */
 @font-face {
-  font-family: roboto-condensed-fallback;
-  size-adjust: 88.82%;
-  src: local('Arial');
-}
-
-@font-face {
-  font-family: roboto-fallback;
-  size-adjust: 99.529%;
+  font-family: proxima-nova-fallback;
+  size-adjust: 97.64%;
+  ascent-override: 92%;
   src: local('Arial');
 }
 
 @media (width >= 900px) {
   :root {
-    /* body sizes */
-    --body-font-size-m: 18px;
-    --body-font-size-s: 16px;
-    --body-font-size-xs: 14px;
-
-    /* heading sizes */
-    --heading-font-size-xxl: 45px;
-    --heading-font-size-xl: 36px;
-    --heading-font-size-l: 28px;
-    --heading-font-size-m: 22px;
+    --body-font-size-l: 19px;
+    --body-font-size-m: 16px;
+    --body-font-size-s: 14px;
+    --body-font-size-xs: 13px;
+    --heading-font-size-xxl: 49px;
+    --heading-font-size-xl: 29px;
+    --heading-font-size-l: 26px;
+    --heading-font-size-m: 23px;
     --heading-font-size-s: 20px;
     --heading-font-size-xs: 18px;
   }
@@ -87,7 +134,10 @@ body {
   color: var(--text-color);
   font-family: var(--body-font-family);
   font-size: var(--body-font-size-m);
-  line-height: 1.6;
+  font-weight: 400;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body.appear {
@@ -123,9 +173,10 @@ h6 {
   margin-top: 0.8em;
   margin-bottom: 0.25em;
   font-family: var(--heading-font-family);
-  font-weight: 600;
+  font-weight: 700;
   line-height: 1.25;
   scroll-margin: 40px;
+  color: var(--color-purple);
 }
 
 h1 { font-size: var(--heading-font-size-xxl); }
@@ -181,49 +232,114 @@ a:hover {
   text-decoration: underline;
 }
 
-/* buttons */
+/* buttons — primary is teal, secondary is purple, tertiary is outlined */
 a.button:any-link,
 button {
   box-sizing: border-box;
   display: inline-block;
   max-width: 100%;
   margin: 12px 0;
-  border: 2px solid transparent;
-  border-radius: 2.4em;
-  padding: 0.5em 1.2em;
+  border: 1px solid var(--color-teal);
+  border-radius: var(--border-radius-m);
+  padding: 1rem 2rem;
+  min-height: 56px;
   font-family: var(--body-font-family);
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
+  font-size: 1.125rem;
   line-height: 1.25;
   text-align: center;
   text-decoration: none;
-  background-color: var(--link-color);
-  color: var(--background-color);
+  background-color: var(--color-teal);
+  color: var(--text-light);
   cursor: pointer;
   overflow: hidden;
   text-overflow: ellipsis;
-  white-space: nowrap;
+  white-space: normal;
+  hyphens: auto;
+  transition: all 0.3s ease;
 }
 
 a.button:hover,
-a.button:focus,
+a.button:focus-visible,
 button:hover,
-button:focus {
-  background-color: var(--link-hover-color);
+button:focus-visible {
+  background-color: var(--color-teal-dark);
+  border-color: var(--color-teal-dark);
+  box-shadow: var(--shadow-button-hover);
   cursor: pointer;
 }
 
 button:disabled,
 button:disabled:hover {
-  background-color: var(--light-color);
+  background-color: var(--border-color);
+  border-color: var(--border-color);
+  color: var(--text-color);
+  box-shadow: none;
   cursor: unset;
 }
 
+/* secondary: purple filled */
 a.button.secondary,
 button.secondary {
-  background-color: unset;
-  border: 2px solid currentcolor;
+  background-color: var(--color-purple);
+  border-color: var(--color-purple);
+  color: var(--text-light);
+}
+
+a.button.secondary:hover,
+a.button.secondary:focus-visible,
+button.secondary:hover,
+button.secondary:focus-visible {
+  background-color: var(--color-purple-dark);
+  border-color: var(--color-purple-dark);
+}
+
+/* tertiary: outlined with purple border */
+a.button.tertiary,
+button.tertiary {
+  background-color: var(--background-color);
+  border: 2px solid var(--color-purple-light);
+  color: var(--color-purple-light);
+}
+
+a.button.tertiary:hover,
+a.button.tertiary:focus-visible,
+button.tertiary:hover,
+button.tertiary:focus-visible {
+  background-color: var(--color-purple-light);
+  color: var(--text-light);
+}
+
+/* quaternary: outlined with muted purple border */
+a.button.quaternary,
+button.quaternary {
+  background-color: var(--background-color);
+  border: 2px solid var(--color-purple-muted);
+  color: var(--color-purple-light);
+}
+
+a.button.quaternary:hover,
+a.button.quaternary:focus-visible,
+button.quaternary:hover,
+button.quaternary:focus-visible {
+  background-color: var(--color-purple-muted);
+  color: var(--text-light);
+}
+
+/* generic: transparent with grey border */
+a.button.generic,
+button.generic {
+  background-color: transparent;
+  border-color: var(--text-color-muted);
   color: var(--text-color);
+}
+
+a.button.generic:hover,
+a.button.generic:focus-visible,
+button.generic:hover,
+button.generic:focus-visible {
+  background-color: rgb(81 30 98 / 15%);
 }
 
 main img {
@@ -249,9 +365,9 @@ main > .section {
 }
 
 main > .section > div {
-  max-width: 1200px;
+  max-width: var(--section-max-width);
   margin: auto;
-  padding: 0 24px;
+  padding: 0 var(--section-gutter-space);
 }
 
 main > .section:first-of-type {
@@ -264,10 +380,64 @@ main > .section:first-of-type {
   }
 }
 
-/* section metadata */
+/* section metadata: dark (brand purple) */
+main .section.dark {
+  background-color: var(--color-purple);
+  margin: 0;
+  padding: 40px 0;
+  color: var(--text-light);
+}
+
+main .section.dark h1,
+main .section.dark h2,
+main .section.dark h3,
+main .section.dark h4,
+main .section.dark h5,
+main .section.dark h6 {
+  color: var(--text-light);
+}
+
+main .section.dark a:any-link {
+  color: var(--text-light);
+}
+
+main .section.dark a.button:any-link {
+  background-color: var(--color-teal);
+  border-color: var(--color-teal);
+  color: var(--text-light);
+}
+
+main .section.dark a.button:hover,
+main .section.dark a.button:focus-visible {
+  background-color: var(--color-teal-dark);
+  border-color: var(--color-teal-dark);
+}
+
+/* section metadata: light */
 main .section.light,
 main .section.highlight {
   background-color: var(--light-color);
+  margin: 0;
+  padding: 40px 0;
+}
+
+/* section metadata: sage (muted green-grey) */
+main .section.sage {
+  background-color: var(--color-sage-pale);
+  margin: 0;
+  padding: 40px 0;
+}
+
+/* section metadata: teal */
+main .section.teal {
+  background-color: var(--color-teal-pale);
+  margin: 0;
+  padding: 40px 0;
+}
+
+/* section metadata: purple-light */
+main .section.purple-light {
+  background-color: var(--color-purple-pale);
   margin: 0;
   padding: 40px 0;
 }
