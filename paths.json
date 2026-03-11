@@ -5,6 +5,6 @@
     "/content/premierinn-eds-xwalk/configuration:/.helix/config.json"
   ],
   "includes" : [
-    '/content/premierinn-eds-xwalk/'
+    "/content/premierinn-eds-xwalk/"
   ]
 }
